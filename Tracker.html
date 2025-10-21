@@ -86,6 +86,7 @@
 
 
     <script>
+
       let table=document.getElementById('table')
       console.log("table",table);
 
@@ -124,7 +125,7 @@
       binCell.appendChild(deleteButton)
       deleteButton.appendChild(binImage)
       deleteButton.classList.add('delete-button')
-      deleteButton.onclick=()=> deleteRow(row)
+      deleteButton.onclick=()=> deleteRow(row);
 
       console.log("data:", amountCell, transactionCell, dateCell)
     
@@ -139,41 +140,50 @@
       let balance = document.getElementById('balance').innerText
 
 
-
       if(transactionType == 'Income'){
         if(totalIncome == '0'){
           document.getElementById('totalIncome').innerText=amount
+          console.log("147 amount:", amount)
         }
         else{
           document.getElementById('totalIncome').innerText=parseInt(totalIncome)+parseInt(amount)
+          console.log("151amount:", amount)
         }
         if(balance=='0'){
           document.getElementById('balance').innerText=amount
+          console.log("155amount:", amount)
         }
         else{
           document.getElementById('balance').innerText=parseInt(balance)+parseInt(amount)
+          console.log("159-balanceexpense:", balance, "amount:", amount)
         }
       }
         else if(transactionType == 'Expense')
         {
           if(totalExpense == '0'){
             document.getElementById('expense').innerText=amount
+            console.log("166amount:", amount)
+            
           }
           else{
-            document.getElementById('expense').innerText=parseInt(balance)-parseInt(amount)
+            document.getElementById('expense').innerText=parseInt(totalExpense)-parseInt(amount)
+             console.log("171amount:", amount)
+            
           }
-        }
 
         if(balance=='0'){
             document.getElementById('balance').innerText=amount
+            console.log("177amount:", amount)
         }
         else{
           document.getElementById('balance').innerText=parseInt(balance)-parseInt(amount)
+          console.log(" 181-balanceexpense:", balance, "amount:", amount)
         }
+      }
 
 
   
-      }
+   }
     </script>
 
 
