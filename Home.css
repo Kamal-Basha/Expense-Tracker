@@ -7,7 +7,6 @@ body{
     overflow: hidden;   
     display: flex;
    
-
 }
 
 .solid-circle{
@@ -63,4 +62,33 @@ body{
     color: white;
     padding: 5px 25px;
     width: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+
+.solid-circle{
+   
+    width: 310px;
+    height: 310px;
+    background: black;
+    right: -150px;
+    top: -150px;
+    
+  
+}
+#login-button{
+    background-color: black;    
+}
+#Name{
+    color: black;
+    font-size: 100px;
+    
+}
+#click-here-button{
+    color: black;
+}
+#floatingInput{
+    color: red;
+
+}
 }
