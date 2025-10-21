@@ -22,7 +22,7 @@ body{
 }
 .header-home{
    
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     justify-content: space-between;
     position: absolute;
@@ -44,7 +44,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     margin-left: 25px;
 
 }
@@ -64,7 +64,7 @@ body{
     width: 100px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 668px) {
 
 .solid-circle{
    
